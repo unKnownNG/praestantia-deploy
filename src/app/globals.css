@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -9,15 +11,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
+}
+@font-face {
+  font-family: 'LogoFont';
+  src: url('/fonts/AlValenciaga.ttf') format('ttf'),
+       url('/fonts/AlValenciaga.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, "AlValenciaga",Helvetica, sans-serif;
 }
 
 @layer utilities {
