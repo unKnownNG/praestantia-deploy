@@ -97,13 +97,13 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="/"
+              href="/event"
               className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
             >
               Event
             </Link>
             <Link
-              href="/"
+              href="/team"
               className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
             >
               Team
