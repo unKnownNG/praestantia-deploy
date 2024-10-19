@@ -27,13 +27,13 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images, interval = 3000 }) =>
   };
 
   return (
-    <div className="relative w-full h-[40vh] md:h-[60vh] lg:h-[80vh]  overflow-hidden">
+    <div className="relative w-full h-[60vh] md:h-[80vh] lg:h-[1080px]  overflow-hidden">
       <div
         className="flex transition-transform ease-in-out duration-700"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((img, index) => (
-          <div className="min-w-full h-[80vh] relative rounded-lg" key={index}>
+          <div className="min-w-full h-full relative rounded-lg" key={index}>
             <Image
               src={img.src}
               alt={img.alt}
