@@ -1,18 +1,22 @@
-// components/Footer.tsx
 import React from 'react';
+import Image from 'next/image';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8 px-4 md:px-8 lg:px-16">
+    <footer className="bg-black-800 text-white py-8 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
 
-        {/* Left Section */}
+        {/* Left Section with Logo */}
         <div className="w-full md:w-1/3 text-center md:text-left">
-          <h2 className="text-xl font-bold mb-2">
-            SRI SAI RAM INSTITUTE OF TECHNOLOGY
-          </h2>
-          <div className="flex justify-center md:justify-start space-x-4">
+          <Image 
+            src="/SSITLogo.png" 
+            alt="SRI SAI RAM INSTITUTE OF TECHNOLOGY Logo" 
+            width={250} 
+            height={250} 
+            className="mb-2" 
+          />
+          <div className="flex justify-center space-x-4 ml-2">
             <a href="https://www.facebook.com/SairamInstituteOfTechnology?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
               <FaFacebook className="text-2xl" />
             </a>
@@ -37,7 +41,7 @@ function Footer() {
           </div>
         </div>
 
-        {/* Right Section */}
+        {/* Right Section (Quick Links) */}
         <div className="w-full md:w-1/3 text-center md:text-right">
           <h2 className="text-xl font-bold mb-4">Quick Links</h2>
           <ul className="space-y-2">
