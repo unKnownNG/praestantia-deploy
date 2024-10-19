@@ -15,22 +15,45 @@
     --foreground: #ededed;
   }
 }
+
 @font-face {
-  font-family: 'AlValenciaga';
-  src: url('/fonts/AlValenciaga.ttf') format('ttf'),
-       url('/fonts/AlValenciaga.ttf') format('ttf');
-  font-weight: 400;
+  font-family: 'AlValenciaga'; 
+  src: url('/font/AlValenciaga.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('/font/PlayfairDisplay.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/font/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, "AlValenciaga",Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; 
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .customfont {
+    font-family: 'AlValenciaga', sans-serif; 
+  }
+
+  .subheading {
+    font-family: 'PlayfairDisplay', sans-serif;
+  }
+
+  .content {
+    font-family: 'Lato', sans-serif;
   }
 }
+
