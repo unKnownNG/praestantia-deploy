@@ -7,7 +7,7 @@ const teamMembers = [
   { name: 'Ms. SAKTHI S', designation: 'President', image: '/president.jpg' },
   { name: 'Mr. NIRANJAN R', designation: 'Vice President', image: '/vicePresident.jpg' },
   { name: 'Ms. RANZHANI V', designation: 'Secratary', image: '/secretary.jpg' },
-  { name: 'Person 7', designation: '', image: '/logo.png' },
+  { name: 'Mr. BHUVANESH L', designation: 'Treasurer', image: '/treasurer.jpg' },
   { name: 'Ms. DEEPTHI', designation: 'Join Secretary', image: '/joinSecretary.jpg' },
   { name: 'Mr. SHRI SHARAN KS', designation: 'Joint Treasurer', image: '/jointTreasurer.jpg' },
 ];

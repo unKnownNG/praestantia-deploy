@@ -34,9 +34,9 @@ export function Events() {
 
   return (
     <>
-    <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center font-LogoFont m-8">
-            EVENTS
-          </h2>
+      <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center font-LogoFont m-8">
+        EVENTS
+      </h2>
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
@@ -133,7 +133,7 @@ export function Events() {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4 m-8">
+      <ul className="max-w-2xl mx-auto w-80 md:w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4 m-8">
         {cards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
@@ -148,7 +148,7 @@ export function Events() {
                   height={360}
                   src={card.src}
                   alt={card.title}
-                  className="h-60 w-full  rounded-lg object-cover object-top"
+                  className="h-60 w-80  rounded-lg object-cover object-top"
                 />
               </motion.div>
               <div className="flex justify-center items-center flex-col">
@@ -263,6 +263,13 @@ const cards = [
             <br />
             6. Components must be handled with care. Damage to the components is
             not encouraged.
+            <br />
+            <strong>Event Coordinators:</strong>
+            <br />
+            Jeevesh H - 9791150386
+            <br />
+            Gnanasoundari R - 7200461570
+            <br />
           </p>
         </p>
       );
@@ -343,15 +350,6 @@ const cards = [
           7. Conclusion
           <br />
           <br />
-          <strong>Prize:</strong>
-          <br />
-          1st Place: ₹1000
-          <br />
-          2nd Place: ₹750
-          <br />
-          3rd Place: ₹500
-          <br />
-          <br />
           <strong>Event Coordinators:</strong>
           <br />
           Anisha P – 8778823101
@@ -369,7 +367,8 @@ const cards = [
     title: "Brain-o-Val Conquer",
     src: "/brainOVal.jpg",
     ctaText: "Register",
-    ctaLink: "https://docs.google.com/forms/d/e/1FAIpQLScsFsffPBtEUAlL5App3HUAtvhLWg0cYTr8aalNu2j_piSM8g/viewform?usp=sf_link",
+    ctaLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScsFsffPBtEUAlL5App3HUAtvhLWg0cYTr8aalNu2j_piSM8g/viewform?usp=sf_link",
     content: () => {
       return (
         <p>
@@ -458,36 +457,53 @@ const cards = [
     title: "Stadium Wonders",
     src: "/stadiumWonders.jpg",
     ctaText: "Register",
-    ctaLink: "https://docs.google.com/forms/d/e/1FAIpQLSdKMYTVTfWUWscc_4pfRhB8fSBxsKjS5cuBx_KZuJ5L4QXcbQ/viewform",
+    ctaLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdKMYTVTfWUWscc_4pfRhB8fSBxsKjS5cuBx_KZuJ5L4QXcbQ/viewform",
     content: () => {
-      return <p><div>
-      <h1>Stadium Wonders - Strike a Deal</h1>
-      <p>
-        "Bid, build, and battle! Create your dream team in this exciting IPL
-        mock auction."
-      </p>
-      <br />
-      <p>
-        Experience the thrill of the IPL auction! Bid on your favorite
-        cricketers and create your dream team in this exciting mock auction.
-      </p>
-      <br />
-      <strong>RULES :</strong>
-      <br />
-      <p>1. 10 teams of min 2 members or max 3 members are allowed.</p>
-      <p>2. The 10 teams are randomly assigned with 10 IPL teams by random draw.</p>
-      <p>3. Each team will receive an IPL team according to the draw.</p>
-      <p>
-        4. Teams will receive a virtual budget to bid on their favorite IPL players and the teams can retain a min of 1 capped or uncapped or maximum of 6 players of 4 capped and 2 uncapped or 5 capped or 1 uncapped.
-      </p>
-      <p>5. Teams will receive Right to Match cards based on their retentions.</p>
-      <p>
-        6. The auction will be conducted in a fast-paced, competitive environment with multiple rounds based on Marquee list of players.
-      </p>
-      <p>
-        7. The goal is to create a balanced team that can dominate the virtual IPL league.
-      </p>
-    </div></p>;
+      return (
+        <p>
+          <div>
+            <h1>Stadium Wonders - Strike a Deal</h1>
+            <p>
+              "Bid, build, and battle! Create your dream team in this exciting
+              IPL mock auction."
+            </p>
+            <br />
+            <p>
+              Experience the thrill of the IPL auction! Bid on your favorite
+              cricketers and create your dream team in this exciting mock
+              auction.
+            </p>
+            <br />
+            <strong>RULES :</strong>
+            <br />
+            <p>1. 10 teams of min 2 members or max 3 members are allowed.</p>
+            <p>
+              2. The 10 teams are randomly assigned with 10 IPL teams by random
+              draw.
+            </p>
+            <p>3. Each team will receive an IPL team according to the draw.</p>
+            <p>
+              4. Teams will receive a virtual budget to bid on their favorite
+              IPL players and the teams can retain a min of 1 capped or uncapped
+              or maximum of 6 players of 4 capped and 2 uncapped or 5 capped or
+              1 uncapped.
+            </p>
+            <p>
+              5. Teams will receive Right to Match cards based on their
+              retentions.
+            </p>
+            <p>
+              6. The auction will be conducted in a fast-paced, competitive
+              environment with multiple rounds based on Marquee list of players.
+            </p>
+            <p>
+              7. The goal is to create a balanced team that can dominate the
+              virtual IPL league.
+            </p>
+          </div>
+        </p>
+      );
     },
   },
 ];
