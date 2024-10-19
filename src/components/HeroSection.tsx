@@ -24,11 +24,11 @@ export default function HeroSection() {
               className="w-36 h-36 md:w-48 md:h-48 lg:w-64 lg:h-64 object-contain" 
             />
           </div>
-          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center font-LogoFont text-primaryColor">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center font-AlValenciaga text-primaryColor">
             Praestantia 2k24
           </h2>
           <p className="text-primaryColor text-sm md:text-lg lg:text-2xl max-w-xl mt-6 text-center">
-            Some quotes and Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo.
+          Step into Praestantia: A Celebration of Knowledge and Creativity
           </p>
         </Vortex>
       </div>

@@ -87,7 +87,7 @@ export function Events() {
               </motion.div>
 
               <div>
-                <div className="flex justify-between items-start p-4">
+                <div className="flex justify-between items-start p-4 m-8">
                   <div className="">
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
@@ -110,7 +110,7 @@ export function Events() {
                     exit={{ opacity: 0 }}
                     href={active.ctaLink}
                     target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+                    className="px-4 py-3 text-sm rounded-full font-bold bg-yellow-500 text-white"
                   >
                     {active.ctaText}
                   </motion.a>
@@ -133,7 +133,7 @@ export function Events() {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
+      <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4 m-8">
         {cards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
@@ -210,9 +210,9 @@ const cards = [
   {
     description: "Electronics Spark Carnival Excitement",
     title: "Flicker Frenzy",
-    src: "/img2.webp",
+    src: "/flickerFrenzy.jpg",
     ctaText: "Register",
-    ctaLink: "",
+    ctaLink: "https://forms.gle/Zo18ubobYpqfMHxE8",
     content: () => {
       return (
         <p>
@@ -273,7 +273,7 @@ const cards = [
     title: "Mind Masquerade",
     src: "/img2.webp",
     ctaText: "Register",
-    ctaLink: "",
+    ctaLink: "https://forms.gle/Arzooiji89DK6i2o7",
     content: () => {
       return (
         <p>
@@ -367,9 +367,9 @@ const cards = [
   {
     description: "The Ultimate Carnival Trivia Showdown",
     title: "Brain-o-Val Conquer",
-    src: "/img2.webp",
+    src: "/brainOVal.jpg",
     ctaText: "Register",
-    ctaLink: "",
+    ctaLink: "https://docs.google.com/forms/d/e/1FAIpQLScsFsffPBtEUAlL5App3HUAtvhLWg0cYTr8aalNu2j_piSM8g/viewform?usp=sf_link",
     content: () => {
       return (
         <p>
@@ -454,13 +454,40 @@ const cards = [
     },
   },
   {
-    description: "",
-    title: "Auction/Gaming",
-    src: "/img2.webp",
+    description: " Strike a Deal",
+    title: "Stadium Wonders",
+    src: "/stadiumWonders.jpg",
     ctaText: "Register",
-    ctaLink: "",
+    ctaLink: "https://docs.google.com/forms/d/e/1FAIpQLSdKMYTVTfWUWscc_4pfRhB8fSBxsKjS5cuBx_KZuJ5L4QXcbQ/viewform",
     content: () => {
-      return <p></p>;
+      return <p><div>
+      <h1>Stadium Wonders - Strike a Deal</h1>
+      <p>
+        "Bid, build, and battle! Create your dream team in this exciting IPL
+        mock auction."
+      </p>
+      <br />
+      <p>
+        Experience the thrill of the IPL auction! Bid on your favorite
+        cricketers and create your dream team in this exciting mock auction.
+      </p>
+      <br />
+      <strong>RULES :</strong>
+      <br />
+      <p>1. 10 teams of min 2 members or max 3 members are allowed.</p>
+      <p>2. The 10 teams are randomly assigned with 10 IPL teams by random draw.</p>
+      <p>3. Each team will receive an IPL team according to the draw.</p>
+      <p>
+        4. Teams will receive a virtual budget to bid on their favorite IPL players and the teams can retain a min of 1 capped or uncapped or maximum of 6 players of 4 capped and 2 uncapped or 5 capped or 1 uncapped.
+      </p>
+      <p>5. Teams will receive Right to Match cards based on their retentions.</p>
+      <p>
+        6. The auction will be conducted in a fast-paced, competitive environment with multiple rounds based on Marquee list of players.
+      </p>
+      <p>
+        7. The goal is to create a balanced team that can dominate the virtual IPL league.
+      </p>
+    </div></p>;
     },
   },
 ];

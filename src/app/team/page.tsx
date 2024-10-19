@@ -1,16 +1,15 @@
 import Image from 'next/image';
 
 const teamMembers = [
-  { name: 'Person 1', designation: 'Lead Organizer', image: '/logo.png' },
-  { name: 'Person 2', designation: 'Event Coordinator', image: '/logo.png' },
-  { name: 'Person 3', designation: 'Designer', image: '/logo.png' },
-  { name: 'Person 4', designation: 'Speaker', image: '/logo.png' },
-  { name: 'Person 5', designation: 'Volunteer', image: '/logo.png' },
-  { name: 'Person 6', designation: 'Volunteer', image: '/logo.png' },
-  { name: 'Person 7', designation: 'Volunteer', image: '/logo.png' },
-  { name: 'Person 8', designation: 'Volunteer', image: '/logo.png' },
-  { name: 'Person 9', designation: 'Volunteer', image: '/logo.png' },
-  { name: 'Person 10', designation: 'Volunteer', image: '/logo.png' },
+  { name: 'Dr. G. THAMARAI SELVI', designation: 'Head Of The Department', image: '/hod.jpg' },
+  { name: 'Ms. V.SUBASHINI ', designation: 'Assistant Professor', image: '/SUBASHINI.jpg' },
+  { name: 'Ms. G. VALARMATHI', designation: 'Associate Professor', image: '/VALARMATHI.jpg' },
+  { name: 'Ms. SAKTHI S', designation: 'President', image: '/president.jpg' },
+  { name: 'Mr. NIRANJAN R', designation: 'Vice President', image: '/vicePresident.jpg' },
+  { name: 'Ms. RANZHANI V', designation: 'Secratary', image: '/secretary.jpg' },
+  { name: 'Person 7', designation: '', image: '/logo.png' },
+  { name: 'Ms. DEEPTHI', designation: 'Join Secretary', image: '/joinSecretary.jpg' },
+  { name: 'Mr. SHRI SHARAN KS', designation: 'Joint Treasurer', image: '/jointTreasurer.jpg' },
 ];
 export default function page() {
   return (
@@ -19,22 +18,24 @@ export default function page() {
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           {/* Row 1 - 1 Person */}
-          <div className="mb-8">
-            <div className="w-40 h-40 rounded-full overflow-hidden mb-4 relative items-center">
-              <Image
-                src={teamMembers[0].image}
-                alt={teamMembers[0].name}
-                layout="fill"
-                objectFit="cover"
-                className="object-center"
-              />
-            </div>
-            <div className="">
+          <div className="mb-8 flex flex-col items-center">
+  <div className="w-40 h-40 rounded-full overflow-hidden mb-4 flex items-center justify-center">
+    <Image
+      src={teamMembers[0].image}
+      alt={teamMembers[0].name}
+      width={160}
+      height={160}
+      objectFit="cover"
+      className="object-center"
+    />
+  </div>
+  <div className="text-center">
+    <p className="text-xl font-semibold">{teamMembers[0].name}</p>
+    <p className="text-gray-500">{teamMembers[0].designation}</p>
+  </div>
+</div>
 
-            <p className="text-xl font-semibold flex justify-center">{teamMembers[0].name}</p>
-            <p className="text-gray-500 flex justify-center">{teamMembers[0].designation}</p>
-            </div>
-          </div>
+
 
           {/* Row 2 - 2 People */}
           <div className="grid grid-cols-2 gap-8 mb-8">
@@ -56,7 +57,7 @@ export default function page() {
           </div>
 
           {/* Row 3 - 7 People */}
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
             {teamMembers.slice(3).map((member, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="w-28 h-28 rounded-full overflow-hidden mb-4 relative">

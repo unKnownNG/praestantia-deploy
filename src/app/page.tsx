@@ -14,7 +14,7 @@ export default function Home() {
       <HeroSection />
       <div className="relative">
         {/* Adjust the SparklesCore position */}
-        <div className="w-full h-[36rem] absolute top-0 left-0">
+        <div className="w-full h-full absolute top-0 left-0">
           <SparklesCore
             id="tsparticlesfullpage"
             background="transparent"
@@ -26,7 +26,7 @@ export default function Home() {
           />
         </div>
 
-        <CountDown launchDate="2024-11-06T10:00:00" />
+        <CountDown launchDate="2024-11-06T09:10:00" />
         <About />
       </div>
     </>
