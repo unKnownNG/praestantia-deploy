@@ -54,31 +54,31 @@ const CountDown = ({ launchDate }: { launchDate: string }) => {
 
   return (
     <div className="h-[10rem] mb-20 bg-black">
-      <div className="flex flex-col justify-center items-center text-yellow-400 text-2xl md:text-4xl font-bold fon">
+      <div className="flex flex-col justify-center items-center text-yellow-400 text-2xl md:text-4xl font-bold subheading">
         EVENT COUNTDOWN
       </div>
       <div className="flex justify-center mt-10 gap-3 ">
         <span className="flex flex-col justify-center p-6 text-center bg-black text-yellow-400 text-2xl md:text-5xl  w-36 shadow-lg rounded">
           {timeLeft.days}
-          <small className="text-sm uppercase font-semibold text-yellow-400 ">
+          <small className="text-sm uppercase font-semibold text-yellow-400 content">
             Days
           </small>
         </span>
         <span className="flex flex-col justify-center text-center bg-black text-yellow-400 text-2xl md:text-5xl w-36 shadow-sm rounded">
           {timeLeft.hours}
-          <small className="text-sm uppercase font-semibold text-yellow-400">
+          <small className="text-sm uppercase font-semibold text-yellow-400 content">
             Hours
           </small>
         </span>
         <span className="flex flex-col justify-center text-center bg-black text-yellow-400 text-2xl md:text-5xl w-36 shadow-lg rounded">
           {timeLeft.minutes}
-          <small className="text-sm uppercase font-semibold text-yellow-400">
+          <small className="text-sm uppercase font-semibold text-yellow-400 content">
             Minutes
           </small>
         </span>
         <span className="flex flex-col justify-center text-center bg-black text-yellow-400 text-2xl md:text-5xl w-36 shadow-lg rounded-md">
           {timeLeft.seconds}
-          <small className="text-sm uppercase font-semibold text-yellow-400">
+          <small className="text-sm uppercase font-semibold text-yellow-400 content">
             Seconds
           </small>
         </span>

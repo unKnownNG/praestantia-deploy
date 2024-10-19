@@ -5,11 +5,11 @@ export default function About() {
   return (
     <div className="my-32 bg-black">
       <div className=" ">
-        <div className="flex items-center justify-center font-bold p-4 text-4xl ">
+        <div className="flex items-center justify-center font-bold p-4 text-4xl subheading">
           <h2 className="">ABOUT INSTITUTION </h2>
         </div>
 
-        <p className=" m-10 text-justify text-sm md:text-xl leading-relaxed ">
+        <p className=" m-10 text-justify text-sm md:text-xl leading-relaxed content">
           Sairam Institutions, Chennai, founded by MJF. Ln. Leo Muthu, Chairman
           of Sapthagiri Educational Trust, is a non-profit, non-minority
           institution dedicated to providing quality education. Established in
@@ -28,11 +28,11 @@ export default function About() {
           <br />
           <br />
         </p>
-        <div className="flex items-center justify-center font-bold p-4 text-4xl ">
+        <div className="flex items-center justify-center font-bold p-4 text-4xl subheading">
           <h2 className="">ABOUT DEPARTMENT </h2>
         </div>
 
-        <p className=" m-10 text-justify text-sm md:text-xl leading-relaxed ">
+        <p className=" m-10 text-justify text-sm md:text-xl leading-relaxed content">
         Department of Electronics and Communication Engineering was started in the year 2008 with an intake of 60. Subsequently, the intake was increased to 90 in 2009-2010 and 120 from the year 2010-11. The department is certified by ISO 9001:2015 and accredited for three years by NBA expert team. The department has well qualified, experienced teaching faculty and supporting faculty, to impart knowledge and skills.
         <br />
         <br />

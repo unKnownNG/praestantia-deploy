@@ -40,7 +40,7 @@ export default function Home() {
             maxSize={1.4}
             particleDensity={100}
             className="w-full h-full b"
-            particleColor={"#ffc300"}
+              particleColor= {"#bd6e00"}
           />
         </div>
 

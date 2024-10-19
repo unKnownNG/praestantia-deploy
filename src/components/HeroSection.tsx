@@ -11,7 +11,7 @@ export default function HeroSection() {
           backgroundColor="black"
           rangeSpeed={1.0}
           rangeY={250}
-          baseHue={35}
+          baseHue={20}
           baseSpeed={0.001}
           className="flex items-center flex-col justify-center px-2 m-0 md:px-10 py-4 w-full h-full"
         >
@@ -24,11 +24,14 @@ export default function HeroSection() {
               className="w-36 h-36 md:w-48 md:h-48 lg:w-64 lg:h-64 object-contain" 
             />
           </div>
-          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center font-AlValenciaga text-primaryColor">
-            Praestantia 2k24
+
+          <h2 className="text-2xl md:text-3xl lg:text-5xl text-center text-primaryColor customfont">
+            Praestantia
           </h2>
-          <p className="text-primaryColor text-sm md:text-lg lg:text-2xl max-w-xl mt-6 text-center">
-          Praestantia: Where Innovation Meets the Carnival of Ideas
+          
+          <p className="text-primaryColor text - bold text-sm md:text-base lg:text-lg max-w-xl mt-6 text-center subheading">
+            DEPARTMENT OF <br />
+            ELECTRONICS AND COMMUNICATION ENGINEERING
           </p>
         </Vortex>
       </div>
