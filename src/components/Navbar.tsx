@@ -29,21 +29,21 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/event"
-                className="text-white hover:bg-white hover:text-black rounded-lg p-2"
+                className="text-white hover:bg-primaryColor hover:text-black rounded-lg p-2"
               >
                 Event
               </Link>
               <Link
                 href="/team"
-                className="text-white hover:bg-white hover:text-black rounded-lg p-2"
+                className="text-white hover:bg-primaryColor hover:text-black rounded-lg p-2"
               >
                 Team
               </Link>
               <Link
                 href="/"
-                className="text-white hover:bg-white hover:text-black rounded-lg p-2"
+                className="text-white hover:bg-primaryColor hover:text-black rounded-lg p-2"
               >
-                Register
+                Sponsors
               </Link>
             </div>
           </div>
@@ -92,27 +92,27 @@ export default function Navbar() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               href="/"
-              className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
+              className="text-white block hover:bg-primaryColor hover:text-black rounded-lg p-2"
             >
               Home
             </Link>
             <Link
               href="/event"
-              className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
+              className="text-white block hover:bg-primaryColor hover:text-black rounded-lg p-2"
             >
               Event
             </Link>
             <Link
               href="/team"
-              className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
+              className="text-white block hover:bg-primaryColor hover:text-black rounded-lg p-2"
             >
               Team
             </Link>
             <Link
               href="/"
-              className="text-white block hover:bg-white hover:text-black rounded-lg p-2"
+              className="text-white block hover:bg-primaryColor hover:text-black rounded-lg p-2"
             >
-              Register
+              Sponsors
             </Link>
           </div>
         </div>

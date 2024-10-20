@@ -9,25 +9,28 @@ function Footer() {
 
         {/* Left Section with Logo */}
         <div className="w-full md:w-1/3 text-center md:text-left">
-          <Image 
-            src="/SSITLogo.png" 
-            alt="SRI SAI RAM INSTITUTE OF TECHNOLOGY Logo" 
-            width={250} 
-            height={250} 
-            className="mb-2" 
-          />
-          <div className="flex justify-center space-x-4 ml-2">
-            <a href="https://www.facebook.com/SairamInstituteOfTechnology?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="text-2xl" />
-            </a>
-            <a href="https://x.com/sairam_it" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="text-2xl" />
-            </a>
-            <a href="https://www.instagram.com/praestantia_2k24?igsh=MTV0NmJlM2cxaHNyMA==" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-2xl" />
-            </a>
-          </div>
-        </div>
+  <div className="flex justify-center md:justify-start m-4">
+    <Image 
+      src="/SSITLogo.png" 
+      alt="SRI SAI RAM INSTITUTE OF TECHNOLOGY Logo" 
+      width={250} 
+      height={250} 
+      className="mb-2" 
+    />
+  </div>
+  <div className="flex justify-center md:justify-center space-x-4 ml-0 md:ml-2">
+    <a href="https://www.facebook.com/SairamInstituteOfTechnology?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+      <FaFacebook className="text-2xl" />
+    </a>
+    <a href="https://x.com/sairam_it" target="_blank" rel="noopener noreferrer">
+      <FaTwitter className="text-2xl" />
+    </a>
+    <a href="https://www.instagram.com/praestantia_2k24?igsh=MTV0NmJlM2cxaHNyMA==" target="_blank" rel="noopener noreferrer">
+      <FaInstagram className="text-2xl" />
+    </a>
+  </div>
+</div>
+
 
         {/* Center Section (Responsive Map) */}
         <div className="w-full md:w-1/3 flex justify-center">
