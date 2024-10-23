@@ -1,7 +1,17 @@
 "use client";
 import React from "react";
 import { Vortex } from "../components/ui/vortex";
+import { TypewriterEffectSmooth } from "../components/ui/typewriter-effect";
 import Image from "next/image";
+
+
+const words = [
+  
+  {
+    text: "Praestantia ",
+    className: "text-primaryColor text-2xl md:text-3xl lg:text-5xl dark:text-primaryColor customfont",
+  },
+];
 
 export default function HeroSection() {
   return (
@@ -21,13 +31,11 @@ export default function HeroSection() {
               alt="Logo" 
               width={250} 
               height={250} 
-              className="w-36 h-36 md:w-48 md:h-48 lg:w-64 lg:h-64 object-contain" 
+              className="w-36 h-36 md:w-48 md:h-48 lg:w-72 lg:h-72 object-contain animate-float" 
             />
           </div>
 
-          <h2 className="text-2xl md:text-3xl lg:text-5xl text-center text-primaryColor customfont">
-            Praestantia
-          </h2>
+          <TypewriterEffectSmooth words={words} />
           
           <p className="text-primaryColor text - bold text-sm md:text-base lg:text-lg max-w-xl mt-6 text-center subheading">
             DEPARTMENT OF <br />

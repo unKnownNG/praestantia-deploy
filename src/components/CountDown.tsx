@@ -53,37 +53,37 @@ const CountDown = ({ launchDate }: { launchDate: string }) => {
   }, [launchDate]);
 
   return (
-    <div className="h-[10rem] mb-20 bg-black">
+    <div className="h-[10rem] mb-20 bg-black z-20">
       <div className="flex flex-col justify-center items-center text-yellow-400 text-2xl md:text-4xl font-bold subheading">
         EVENT COUNTDOWN
       </div>
-      <div className="flex justify-center mt-10 gap-3 ">
-        <span className="flex flex-col justify-center p-6 text-center bg-black text-yellow-400 text-2xl md:text-5xl  w-36 shadow-lg rounded">
-          {timeLeft.days}
-          <small className="text-sm uppercase font-semibold text-yellow-400 content">
-            Days
-          </small>
-        </span>
-        <span className="flex flex-col justify-center text-center bg-black text-yellow-400 text-2xl md:text-5xl w-36 shadow-sm rounded">
-          {timeLeft.hours}
-          <small className="text-sm uppercase font-semibold text-yellow-400 content">
-            Hours
-          </small>
-        </span>
-        <span className="flex flex-col justify-center text-center bg-black text-yellow-400 text-2xl md:text-5xl w-36 shadow-lg rounded">
-          {timeLeft.minutes}
-          <small className="text-sm uppercase font-semibold text-yellow-400 content">
-            Minutes
-          </small>
-        </span>
-        <span className="flex flex-col justify-center text-center bg-black text-yellow-400 text-2xl md:text-5xl w-36 shadow-lg rounded-md">
-          {timeLeft.seconds}
-          <small className="text-sm uppercase font-semibold text-yellow-400 content">
-            Seconds
-          </small>
-        </span>
-        <small></small>
-      </div>
+      <div className="flex flex-wrap justify-center mt-10 gap-3 z-10">
+  <span className="flex flex-col justify-center p-4 text-center bg-yellow-500/30 backdrop-blur-sm text-yellow-400 text-xl md:text-3xl lg:text-5xl w-28 md:w-36 shadow-lg rounded-2xl border-solid border-yellow-400 border-2">
+    {timeLeft.days}
+    <small className="text-xs md:text-sm uppercase font-semibold text-yellow-400">
+      Days
+    </small>
+  </span>
+  <span className="flex flex-col justify-center p-4 text-center bg-yellow-500/30 backdrop-blur-sm text-yellow-400 text-xl md:text-3xl lg:text-5xl w-28 md:w-36 shadow-sm rounded-2xl border-solid border-yellow-400 border-2">
+    {timeLeft.hours}
+    <small className="text-xs md:text-sm uppercase font-semibold text-yellow-400">
+      Hours
+    </small>
+  </span>
+  <span className="flex flex-col justify-center p-4 text-center bg-yellow-500/30 backdrop-blur-sm text-yellow-400 rounded-2xl border-solid border-yellow-400 border-2 text-xl md:text-3xl lg:text-5xl w-28 md:w-36 shadow-lg">
+    {timeLeft.minutes}
+    <small className="text-xs md:text-sm uppercase font-semibold text-yellow-400">
+      Minutes
+    </small>
+  </span>
+  <span className="flex flex-col justify-center p-4 text-center bg-yellow-500/30 backdrop-blur-sm text-yellow-400 rounded-2xl border-solid border-yellow-400 border-2 text-xl md:text-3xl lg:text-5xl w-28 md:w-36 shadow-lg">
+    {timeLeft.seconds}
+    <small className="text-xs md:text-sm uppercase font-semibold text-yellow-400">
+      Seconds
+    </small>
+  </span>
+</div>
+
     </div>
   );
 };

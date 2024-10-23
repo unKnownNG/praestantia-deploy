@@ -37,10 +37,10 @@ export default function Home() {
             id="tsparticlesfullpage"
             background="transparent"
             minSize={0.6}
-            maxSize={1.4}
-            particleDensity={100}
-            className="w-full h-full b"
-              particleColor= {"#bd6e00"}
+            maxSize={1.8}
+            particleDensity={200}
+            className="w-full h-full "
+              particleColor= {"#ffc300"}
           />
         </div>
 
