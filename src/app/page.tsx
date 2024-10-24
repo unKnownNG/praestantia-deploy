@@ -2,7 +2,7 @@
 import About from "@/components/About";
 import HeroSection from "@/components/HeroSection";
 import ImageSlider from "@/components/ImageSlider";
-import { SparklesCore } from "../components/ui/sparkles";
+import { SparklesCore } from "@/components/ui/sparkles";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
@@ -16,12 +16,6 @@ const images = [
   { src: "/img3.jpg", alt: "Image 3" }
 ];
 
-// const images = [
-//   "/img1.jpg",
-//   "/img2.jpg",
-//   "/img3.jpg",
-//   "/img4.jpg"
-// ];
 
 export default function Home() {
   return (

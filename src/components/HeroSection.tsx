@@ -8,7 +8,7 @@ import Image from "next/image";
 const words = [
   
   {
-    text: "Praestantia ",
+    text: "Praestantia",
     className: "text-primaryColor text-2xl md:text-3xl lg:text-5xl dark:text-primaryColor customfont",
   },
 ];

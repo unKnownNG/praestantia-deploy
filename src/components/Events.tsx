@@ -139,7 +139,7 @@ export function Events() {
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col  hover:bg-neutral-800 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -154,13 +154,13 @@ export function Events() {
               <div className="flex justify-center items-center flex-col">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left text-base"
+                  className="font-medium text-neutral-200 dark:text-neutral-200 text-center md:text-left text-base"
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
+                  className="text-neutral-400 dark:text-neutral-400 text-center md:text-left text-base"
                 >
                   {card.description}
                 </motion.p>
@@ -270,6 +270,10 @@ const cards = [
             <br />
             Gnanasoundari R - 7200461570
             <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </p>
         </p>
       );
@@ -357,6 +361,10 @@ const cards = [
           Aswin Kumar B - 6383093225
           <br />
           Sriharshini S - 9042496792
+          <br />
+          <br />
+          <br />
+          <br />
         </p>
       );
     },
@@ -448,6 +456,10 @@ const cards = [
           Mohamed Daanish R - 9789844909
           <br />
           Murali Karthik K - 9944040767
+          <br />
+          <br />
+          <br />
+          <br />
         </p>
       );
     },
@@ -501,6 +513,10 @@ const cards = [
               7. The goal is to create a balanced team that can dominate the
               virtual IPL league.
             </p>
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
         </p>
       );
