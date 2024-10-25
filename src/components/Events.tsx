@@ -515,6 +515,13 @@ const cards = [
             </p>
             <br />
             <br />
+            <strong>Event Coordinators:</strong>
+            <br />
+            Suhanthee R - 9626403845
+            <br />
+            Nithiyarasan T - 9042031009
+            <br />
+            <br />
             <br />
             <br />
           </div>
