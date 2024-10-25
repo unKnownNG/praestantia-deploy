@@ -40,7 +40,7 @@ export default function Navbar() {
                 Team
               </Link>
               <Link
-                href="/"
+                href="#"
                 className="text-white hover:bg-primaryColor hover:text-black rounded-lg p-2"
               >
                 Sponsors
@@ -109,7 +109,7 @@ export default function Navbar() {
               Team
             </Link>
             <Link
-              href="/"
+              href="#"
               className="text-white block hover:bg-primaryColor hover:text-black rounded-lg p-2"
             >
               Sponsors
