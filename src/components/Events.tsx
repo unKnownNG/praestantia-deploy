@@ -465,12 +465,12 @@ const cards = [
     },
   },
   {
-    description: " Strike a Deal",
+    description: "Strike a Deal",
     title: "Stadium Wonders",
     src: "/stadiumWonders.jpg",
     ctaText: "Register",
     ctaLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSdKMYTVTfWUWscc_4pfRhB8fSBxsKjS5cuBx_KZuJ5L4QXcbQ/viewform",
+      "https://docs.google.com/forms/d/e/1FAIpQLScPMQ-kahrignSc7C79aVZ2IDJDIR4FiNlEu07GmqogGShnqw/viewform?usp=sf_link",
     content: () => {
       return (
         <p>
