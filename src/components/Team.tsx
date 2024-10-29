@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const teamMembers = [
   {
@@ -39,16 +40,22 @@ const teamMembers = [
     image: "/jointTreasurer.jpg",
   },
   {
-    name: "Mr. G R Vishwanand",
+    name: "Mr. G R VISHWANAND",
     image: "/vishwa.jpg",
+    github: "https://github.com/Nightmare1854",
+    linkedin: "https://www.linkedin.com/in/vishwanandgr",
   },
   {
-    name: "Mr. R Mohammed Daiyaan",
+    name: "Mr. R MOHAMMED DAIYAAN",
     image: "/daiyaan.jpg",
+    github: "https://github.com/unKnownNG",
+    linkedin: "https://www.linkedin.com/in/mohammed-daiyaan-6791a7276/",
   },
   {
     name: "Mr. M Balamurugan",
     image: "/bala2.jpg",
+    github: "https://github.com/Bala152004",
+    linkedin: "https://www.linkedin.com/in/bala-murugan152004",
   },
 ];
 export default function Team() {
@@ -110,14 +117,14 @@ export default function Team() {
                 <p className="text-base font-semibold">{member.name}</p>
                 <p className="text-gray-500">{member.designation}</p>
               </div>
-
-          
             ))}
           </div>
           {/* Web team */}
-      <h1 className="text-center text-3xl font-bold mb-10 mt-10">MEET THE DEVS</h1>
+          <h1 className="text-center text-3xl font-bold mb-10 mt-10">
+            MEET THE DEVS
+          </h1>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 z-20 lg:grid-cols-3 gap-8 justify-center mx-auto">
             {teamMembers.slice(9).map((member, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="w-28 h-28 rounded-full overflow-hidden mb-4 relative">
@@ -129,11 +136,25 @@ export default function Team() {
                     className="object-center"
                   />
                 </div>
-                <p className="text-base font-semibold">{member.name}</p>
+                <p className="text-base font-semibold flex items-center align-middle">{member.name}</p>
                 <p className="text-gray-500">{member.designation}</p>
+                <div className="flex space-x-4 mt-2">
+                  <a
+                    href={member.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub size={25} />
+                  </a>
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin size={25} />
+                  </a>
+                </div>
               </div>
-
-          
             ))}
           </div>
         </div>

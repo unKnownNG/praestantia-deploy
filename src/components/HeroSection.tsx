@@ -37,7 +37,7 @@ export default function HeroSection() {
 
           <TypewriterEffectSmooth words={words} />
           
-          <p className="text-primaryColor text - bold text-sm md:text-base lg:text-lg max-w-xl mt-6 text-center subheading">
+          <p className="text-primaryColor text - bold text-sm md:text-base lg:text-lg max-w-xl mt-6 text-center ">
             DEPARTMENT OF <br />
             ELECTRONICS AND COMMUNICATION ENGINEERING
           </p>
