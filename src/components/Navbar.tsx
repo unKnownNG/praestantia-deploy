@@ -39,12 +39,12 @@ export default function Navbar() {
               >
                 Team
               </Link>
-              {/* <Link
-                href="#"
+              <Link
+                href="/sponsor"
                 className="text-white hover:bg-primaryColor hover:text-black rounded-lg p-2"
               >
                 Sponsors
-              </Link> */}
+              </Link>
             </div>
           </div>
           <div className="md:hidden flex items-center">
@@ -108,12 +108,12 @@ export default function Navbar() {
             >
               Team
             </Link>
-             {/* <Link
-              href="#"
+             <Link
+              href="/sponsor"
               className="text-white block hover:bg-primaryColor hover:text-black rounded-lg p-2"
             >
               Sponsors
-            </Link>  */}
+            </Link> 
           </div>
         </div>
       )}

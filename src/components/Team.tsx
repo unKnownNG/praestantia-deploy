@@ -20,7 +20,7 @@ const teamMembers = [
   {
     name: "Mr. NIRANJAN R",
     designation: "Vice President",
-    image: "/vicePresident.jpg",
+    image: "/niranjan2.jpg",
   },
   { name: "Ms. RANZHANI V", designation: "Secratary", image: "/secretary.jpg" },
   {
@@ -38,11 +38,23 @@ const teamMembers = [
     designation: "Joint Treasurer",
     image: "/jointTreasurer.jpg",
   },
+  {
+    name: "Mr. G R Vishwanand",
+    image: "/vishwa.jpg",
+  },
+  {
+    name: "Mr. R Mohammed Daiyaan",
+    image: "/daiyaan.jpg",
+  },
+  {
+    name: "Mr. M Balamurugan",
+    image: "/bala2.jpg",
+  },
 ];
 export default function Team() {
   return (
     <div className="py-10">
-      <h1 className="text-center text-3xl font-bold mb-10">Meet the Team</h1>
+      <h1 className="text-center text-3xl font-bold mb-10">MEET THE TEAM</h1>
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           {/* Row 1 - 1 Person */}
@@ -84,7 +96,7 @@ export default function Team() {
 
           {/* Row 3 - 7 People */}
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-            {teamMembers.slice(3).map((member, index) => (
+            {teamMembers.slice(3, 9).map((member, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="w-28 h-28 rounded-full overflow-hidden mb-4 relative">
                   <Image
@@ -98,6 +110,30 @@ export default function Team() {
                 <p className="text-base font-semibold">{member.name}</p>
                 <p className="text-gray-500">{member.designation}</p>
               </div>
+
+          
+            ))}
+          </div>
+          {/* Web team */}
+      <h1 className="text-center text-3xl font-bold mb-10 mt-10">MEET THE DEVS</h1>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            {teamMembers.slice(9).map((member, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <div className="w-28 h-28 rounded-full overflow-hidden mb-4 relative">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    layout="fill"
+                    objectFit="cover"
+                    className="object-center"
+                  />
+                </div>
+                <p className="text-base font-semibold">{member.name}</p>
+                <p className="text-gray-500">{member.designation}</p>
+              </div>
+
+          
             ))}
           </div>
         </div>
