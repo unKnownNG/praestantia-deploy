@@ -30,7 +30,7 @@ const teamMembers = [
     image: "/treasurer.jpg",
   },
   {
-    name: "Ms. DEEPTHI",
+    name: "Ms. DEEPTHI A",
     designation: "Join Secretary",
     image: "/joinSecretary.jpg",
   },

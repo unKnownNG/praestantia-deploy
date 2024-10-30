@@ -92,12 +92,14 @@ export default function Navbar() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               href="/"
+              onClick={() => setisClick(false)}
               className="text-white block hover:bg-primaryColor hover:text-black rounded-lg p-2"
             >
               Home
             </Link>
             <Link
               href="/event"
+              onClick={() => setisClick(false)}
               className="text-white block hover:bg-primaryColor hover:text-black rounded-lg p-2"
             >
               Event
@@ -105,12 +107,14 @@ export default function Navbar() {
             <Link
               href="/team"
               className="text-white block hover:bg-primaryColor hover:text-black rounded-lg p-2"
+              onClick={() => setisClick(false)}
             >
               Team
             </Link>
              <Link
               href="/sponsor"
               className="text-white block hover:bg-primaryColor hover:text-black rounded-lg p-2"
+              onClick={() => setisClick(false)}
             >
               Sponsors
             </Link> 
