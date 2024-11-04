@@ -29,6 +29,16 @@ export default function Sponsors() {
 
               />
         </div>
+        <div className="flex justify-center align-middle m-10">
+              <Image
+                src={"/vei.jpg"}
+                alt={"www.google.com"}
+                width={550}
+                height={160}
+                objectFit="auto"
+
+              />
+        </div>
     </div>
     </>
   )
